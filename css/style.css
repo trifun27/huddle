@@ -1,0 +1,197 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-image: url(/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #684bb1;
+  color: #ffffff;
+}
+
+.top_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.top_part img {
+  height: auto;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_part .logo {
+  width: 30%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 5rem;
+}
+
+.bottom_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 80%;
+  height: auto;
+}
+
+.bottom_part h1 {
+  font-weight: 600;
+}
+
+.bottom_part p {
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+.bottom_part button {
+  width: 50%;
+  margin-top: 1rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  border: none;
+  color: #684bb1;
+  -webkit-box-shadow: 0px 15px 20px rgba(83, 83, 83, 0.4);
+          box-shadow: 0px 15px 20px rgba(83, 83, 83, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.bottom_part .social_links {
+  width: 80%;
+  margin-top: 2rem;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottom_part .social_links button {
+  width: 10%;
+  border-radius: 100%;
+  margin: 1rem;
+  border: none;
+  background-color: transparent;
+}
+
+.bottom_part .social_links button img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+@media only screen and (min-width: 880px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0rem 4rem;
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #684bb1;
+  }
+  .container .bottom_part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0rem 3rem;
+    text-align: left;
+  }
+  .container .bottom_part h1 {
+    margin-top: 2rem;
+  }
+  .container .bottom_part p {
+    margin-top: 2rem;
+  }
+  .container .bottom_part button:hover {
+    cursor: pointer;
+    background-color: #e880e8;
+    color: #ffffff;
+  }
+  .container .bottom_part button {
+    margin-top: 2rem;
+  }
+  .container .bottom_part .reg {
+    width: 30%;
+    height: 3rem;
+  }
+  .container .bottom_part .social_links {
+    position: absolute;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 20%;
+    margin-top: 30rem;
+    margin-right: -5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
